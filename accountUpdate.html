@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Update Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>PetPal</h1>
+            </div>
+            <div id="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="logout.html">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Regular User Account Update Section -->
+        <section id="user-account-update-section">
+            <h2>Update Your Profile</h2>
+            <form id="user-account-update-form">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" value="John Doe" required>
+
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" value="john.doe@email.com" required>
+
+                <label for="userLocation">Location:</label>
+                <input type="text" id="userLocation" value="PetCity, PC 12345" required>
+
+                <label for="userPreferences">Pet Preferences:</label>
+                <textarea id="userPreferences">Likes dogs, prefers medium size, non-allergic breeds.</textarea>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+
+        <!-- Pet Shelter Account Update Section -->
+        <section id="shelter-account-update-section">
+            <h2>Update Shelter Profile</h2>
+            <form id="shelter-account-update-form">
+                <label for="shelterName">Shelter Name:</label>
+                <input type="text" id="shelterName" value="Green Paws Shelter" required>
+
+                <label for="shelterEmail">Email:</label>
+                <input type="email" id="shelterEmail" value="contact@greenpaws.org" required>
+
+                <label for="shelterLocation">Location:</label>
+                <input type="text" id="shelterLocation" value="123 Animal Ave, PetCity, PC 12345" required>
+
+                <label for="shelterMission">Mission Statement:</label>
+                <textarea id="shelterMission">Dedicated to rescuing, rehabilitating, and rehoming animals in need.</textarea>
+
+                <button type="submit">Update Shelter Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PetPal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

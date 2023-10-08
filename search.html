@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>PetPal</h1>
+            </div>
+            <div id="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="account.html">Account</a>
+                <a href="logout.html">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Notifications -->
+        <section id="notifications-section">
+            <div id="notification-icon">
+                <img src="notification-icon.png" alt="Notification Icon">
+                <span class="notification-count">2</span>
+            </div>
+            <div id="notifications-dropdown" hidden>
+                <div class="notification-item">
+                    <p><strong>Luna</strong> is now available for adoption!</p>
+                </div>
+                <div class="notification-item">
+                    <p>Your adoption request for <strong>Max</strong> is pending.</p>
+                </div>
+                <a href="all-notifications.html">See All Notifications</a>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search-section">
+            <input type="text" placeholder="Search for pets...">
+            <button>Search</button>
+        </section>
+        
+        <!-- Results could follow here -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PetPal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Sample JS to handle the dropdown
+        const icon = document.getElementById('notification-icon');
+        const dropdown = document.getElementById('notifications-dropdown');
+
+        icon.addEventListener('click', function() {
+            dropdown.hidden = !dropdown.hidden;
+        });
+    </script>
+</body>
+
+</html>

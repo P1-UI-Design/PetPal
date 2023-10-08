@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Sign Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you will have a stylesheet named styles.css -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>PetPal</h1>
+            </div>
+            <div id="nav-links">
+                <a href="login.html">Log In</a>
+                <!-- Other potential links can be added here -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="signup-choice">
+            <button id="seekerChoice">Pet Seeker Signup</button>
+            <button id="shelterChoice">Pet Shelter Signup</button>
+        </section>
+
+        <section id="signup-form">
+            <!-- Pet Seeker Signup Form -->
+            <div id="seekerForm">
+                <h2>Pet Seeker Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <!-- Displaying error for demonstration purposes -->
+                    <p class="error-message">Invalid email address!</p>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+            <!-- Pet Shelter Signup Form -->
+            <div id="shelterForm" style="display: none;">
+                <h2>Pet Shelter Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Shelter Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PetPal. All rights reserved.</p>
+    </footer>
+
+    <!-- Minimal JS for demonstration purposes, to switch forms -->
+    <script>
+        document.getElementById('seekerChoice').addEventListener('click', function() {
+            document.getElementById('seekerForm').style.display = 'block';
+            document.getElementById('shelterForm').style.display = 'none';
+        });
+
+        document.getElementById('shelterChoice').addEventListener('click', function() {
+            document.getElementById('seekerForm').style.display = 'none';
+            document.getElementById('shelterForm').style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

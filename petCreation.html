@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Add New Pet</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>PetPal</h1>
+            </div>
+            <div id="nav-links">
+                <a href="search.html">Search</a>
+                <a href="dashboard.html">Dashboard</a> <!-- Link to shelter dashboard -->
+                <a href="logout.html">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Pet Creation Form Section -->
+        <section id="pet-creation-form-section">
+            <h2>Add a New Pet for Adoption</h2>
+
+            <!-- Pet Creation Form -->
+            <form id="pet-creation-form" enctype="multipart/form-data">
+                <!-- Picture Upload -->
+                <label for="petImage">Pet Image:</label>
+                <input type="file" id="petImage" required>
+
+                <!-- Name Input -->
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" required>
+
+                <!-- Breed Input -->
+                <label for="petBreed">Breed:</label>
+                <input type="text" id="petBreed" required>
+
+                <!-- Age Input -->
+                <label for="petAge">Age:</label>
+                <input type="number" id="petAge" min="0" required>
+
+                <!-- Gender Dropdown -->
+                <label for="petGender">Gender:</label>
+                <select id="petGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <!-- Size Dropdown -->
+                <label for="petSize">Size:</label>
+                <select id="petSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <!-- Description Textarea -->
+                <label for="petDescription">Description:</label>
+                <textarea id="petDescription" rows="4" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Add Pet</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PetPal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
