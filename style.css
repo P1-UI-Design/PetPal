@@ -1,0 +1,37 @@
+header {
+    background-color: #6a48d7;
+    
+}
+
+.navbar-brand{
+    color: #ffd30f;
+}
+
+.navbar-brand:hover{
+    font-weight: bold ;
+    color: #ffd30f !important;
+}
+
+.nav-item{
+    color: #ffd30f !important;
+}
+
+.nav-item :hover{
+    font-weight: bold !important;
+    color: #ffd30f !important;
+}
+
+.active{
+    color: #ffd30f !important;
+    font-weight: bold;
+}
+
+.btn{
+    color: #ffd30f !important;
+    border-color:  #ffd30f !important;
+}
+
+.btn:hover{
+    background-color: #ffd30f!important;;
+    color: #6a48d7!important;;
+}
