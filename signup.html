@@ -77,41 +77,31 @@
     
 
     <main>
-        <section id="signup-choice">
-            <button id="seekerChoice">Pet Seeker Signup</button>
-            <button id="shelterChoice">Pet Shelter Signup</button>
-        </section>
-
-        <section id="signup-form">
-            <!-- Pet Seeker Signup Form -->
-            <div id="seekerForm">
-                <h2>Pet Seeker Sign Up</h2>
-                <form>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <!-- Displaying error for demonstration purposes -->
-                    <p class="error-message">Invalid email address!</p>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Sign Up</button>
-                </form>
+      <div class="login-page">
+        <img class="major-logo" src="./asserts/logo/Pets Ai File.svg" alt="Logo" >
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <div class="select-login">
+              <button type="Shelter">Login as Shelter</button>
+              <button type="Seeker">Login as Seeker</button>
             </div>
-
-            <!-- Pet Shelter Signup Form -->
-            <div id="shelterForm" style="display: none;">
-                <h2>Pet Shelter Sign Up</h2>
-                <form>
-                    <input type="text" placeholder="Shelter Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-        </section>
+            
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 PetPal. All rights reserved.</p>
-    </footer>
+
 
     <!-- Minimal JS for demonstration purposes, to switch forms -->
     <script>
