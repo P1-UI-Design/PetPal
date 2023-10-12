@@ -52,8 +52,10 @@ header {
   color: white;
 }
 
-.dropdown-item.active{
-  background-color:#200772;
+.nav-link.dropdown-toggle.active, .dropdown-item.active,a.nav-link.active{
+    font-weight: bold;
+    color: #E97451  !important;
+    background-color: #9867C5;
 }
 
 
@@ -89,7 +91,7 @@ header {
     box-sizing: border-box;
     font-size: 14px;
   }
-  .form button[type = "Shelter"]{
+  .form a[type = "Shelter"]{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -106,11 +108,11 @@ header {
 
   }
 
-  .form button[type = "Seeker"]{
+  .form a[type = "Seeker"]{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #E97451;
+    background: #9867C5;
     width: 50%;
     border: 0;
     padding: 5px;
@@ -129,13 +131,7 @@ header {
     gap: 10px;
   }
 
-  .form button[type = "Shelter"]:hover{
-    background: #200772;
-  }
-
-  .form button[type = "Seeker"]:hover{
-    background-color: #A68900;
-  }
+ 
   .form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
@@ -253,13 +249,13 @@ div.shelter-message{
 
 }
 .major-logo-landing{
-  width: 50%;  /* Adjust width as required */
+  width: 30%;  
   height: auto;
 }
 .landing-page a {
-  margin-top: 20px; /* Space above the button */
-  padding: 10px 20px; /* Button padding */
-  font-size: 16px; /* Font size inside button */
+  margin-top: 20px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
   margin: 50px;
 
 }
