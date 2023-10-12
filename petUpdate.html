@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetPal - Update Account</title>
+    <title>PetPal - Create an Account</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <style>
@@ -64,55 +64,104 @@
             </div>
         </nav>
     </header>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
     <main>
-        <!-- Pet Update Form Section -->
-        <section id="pet-update-form-section">
-            <h2>Update Pet Details</h2>
+      <div class="container mt-5">
+          <div class="card">
+              <h5 class="card-header">Update the Account for Your Pet</h5>
+              <div class="card-body">
+                  <form method="post" action="path_to_your_server_endpoint">
+                      <div class="mb-3">
+                          <label for="petImage" class="form-label">Pet Image</label>
+                          <input type="file" class="form-control" id="petImage" name="petImage">
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petName" class="form-label">Pet Name</label>
+                          <input type="text" class="form-control" id="petName" name="petName">
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petGender" class="form-label">Gender</label>
+                          <select class="form-control" id="petGender" name="petGender">
+                              <option>Male</option>
+                              <option>Female</option>
+                          </select>
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petAge" class="form-label">Age</label>
+                          <input type="number" class="form-control" id="petAge" name="petAge">
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petBehavior" class="form-label">Behavior</label>
+                          <textarea class="form-control" id="petBehavior" name="petBehavior" rows="3"></textarea>
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petAllergies" class="form-label">Allergies</label>
+                          <textarea class="form-control" id="petAllergies" name="petAllergies" rows="3"></textarea>
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petDescription" class="form-label">Description</label>
+                          <textarea class="form-control" id="petDescription" name="petDescription" rows="3"></textarea>
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petSize" class="form-label">Size</label>
+                          <input type="text" class="form-control" id="petSize" name="petSize">
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="petBreed" class="form-label">Breed</label>
+                          <input type="text" class="form-control" id="petBreed" name="petBreed">
+                      </div>
+                      
 
-            <!-- Pet Update Form (with pre-filled data for demonstration) -->
-            <form id="pet-update-form" enctype="multipart/form-data">
-                <!-- Picture Upload -->
-                <label for="petImage">Pet Image (Current Image: dog1.jpg):</label>
-                <input type="file" id="petImage">
-
-                <!-- Name Input -->
-                <label for="petName">Pet Name:</label>
-                <input type="text" id="petName" value="Max" required>
-
-                <!-- Breed Input -->
-                <label for="petBreed">Breed:</label>
-                <input type="text" id="petBreed" value="Golden Retriever" required>
-
-                <!-- Age Input -->
-                <label for="petAge">Age:</label>
-                <input type="number" id="petAge" value="5" min="0" required>
-
-                <!-- Gender Dropdown -->
-                <label for="petGender">Gender:</label>
-                <select id="petGender">
-                    <option value="male" selected>Male</option>
-                    <option value="female">Female</option>
-                </select>
-
-                <!-- Size Dropdown -->
-                <label for="petSize">Size:</label>
-                <select id="petSize">
-                    <option value="small">Small</option>
-                    <option value="medium" selected>Medium</option>
-                    <option value="large">Large</option>
-                </select>
-
-                <!-- Description Textarea -->
-                <label for="petDescription">Description:</label>
-                <textarea id="petDescription" rows="4" required>Friendly and playful. Good with children and other pets.</textarea>
-
-                <!-- Update Button -->
-                <button type="submit">Update Pet Details</button>
-            </form>
-        </section>
-    </main>
+                      <div class="mb-3">
+                        <label for="petStatus" class="form-label">Pet Status</label>
+                        <select class="form-control" id="petStatus" name="petStatus" onchange="updateStatusDescription(this.value)">
+                            <option value="available">Available</option>
+                            <option value="adopted">Adopted</option>
+                            <option value="pending">Pending</option>
+                            <option value="withdrawn">Withdrawn</option>
+                        </select>
+                        <small id="statusDescription" class="form-text text-muted">
+                            Users can apply for adoption.
+                        </small>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <script>
+                        function updateStatusDescription(status) {
+                            const descriptionElement = document.getElementById('statusDescription');
+                            
+                            switch(status) {
+                                case 'available':
+                                    descriptionElement.textContent = 'Users can apply for adoption.';
+                                    break;
+                                case 'adopted':
+                                    descriptionElement.textContent = 'The pet has been adopted.';
+                                    break;
+                                case 'pending':
+                                    descriptionElement.textContent = 'The deadline has passed and no more applications are accepted.';
+                                    break;
+                                case 'withdrawn':
+                                    descriptionElement.textContent = 'The pet is no longer available for adoption.';
+                                    break;
+                                default:
+                                    descriptionElement.textContent = '';
+                            }
+                        }
+                    </script>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </main>
 
     <footer>
         <p>&copy; 2023 PetPal. All rights reserved.</p>

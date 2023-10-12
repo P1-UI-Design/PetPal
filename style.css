@@ -216,3 +216,14 @@ header {
 .me-2 {
     margin-right: .5rem!important;
 }
+
+.full-height {
+  min-height: 100vh;
+}
+
+.card-img-limited {
+  max-width: 300px;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}
