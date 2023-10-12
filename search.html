@@ -190,15 +190,11 @@
         image.classList.add("card-img-top");
         card.appendChild(image);
 
-        // Create a "More Information" button
         const moreInfoButton = document.createElement("button");
         moreInfoButton.classList.add("btn", "btn-primary");
         moreInfoButton.textContent = "More Information";
 
-        // Define a click event handler for the button
         moreInfoButton.addEventListener("click", function () {
-          // Handle what happens when the button is clicked, e.g., showing more details.
-          // You can add your logic here.
           alert(
             `This should lead me to the pet information page, not connected yet through backend`
           );
