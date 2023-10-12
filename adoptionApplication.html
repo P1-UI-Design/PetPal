@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
         .conversation-box {
             border: 1px solid #e5e5e5;
@@ -22,92 +22,205 @@
 <body>
 <!-- Navbar and Header code (Assuming similar as provided earlier) -->
 <header>
-  <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-2">
-          <a class="navbar-brand" href="search.html">
-              <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-              PetsHome
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-2">
+            <a class="navbar-brand" href="search.html">
+                <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                PetsHome
             </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link "  href="search.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shelterDetail.html">Shelters</a>
-            </li>
-            
-            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="search.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shelterDetail.html">Shelters</a>
+                    </li>
 
 
-            <li  class="nav-item dropdown" >
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                My Account
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="accountUpdate.html">Account info</a></li>
-                <li><a class="dropdown-item" href="#" class="nav-link disabled" aria-disabled="true">My Saved Pets(disabled)</a></li>
-                <li><a class="dropdown-item" href="#">Sign Out</a></li>
-              </ul>
-            </li>
-          </ul>
 
-          <div class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </div>
+
+                    <li  class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="accountUpdate.html">Account info</a></li>
+                            <li><a class="dropdown-item" href="#" class="nav-link disabled" aria-disabled="true">My Saved Pets(disabled)</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+            </div>
         </div>
-      </div>
-  </nav>
+    </nav>
 </header>
 <main class="container mt-4">
-  <div class="row" style="height: 56px;"></div>
+    <div class="row" style="height: 56px;"></div>
     <!-- Adoption Application Information Section -->
     <section id="application-info-section">
         <h2 class="mb-3 adoption-title">Your Adoption Application for Max</h2>
 
+        <div class="card">
+            <div class="card-header">
+                <strong>Your Name</strong>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Takutou Kim</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <strong>Address</strong>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Residence No. 55 Ryongsong Residence Pyongyang, North Korea</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <strong>Phone Number</strong>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p> +(850) 2 18 111</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <strong>Reason for Adopting</strong>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p> I've always wanted to have a pet and provide a loving home...</p>
+                </blockquote>
+            </div>
+        </div>
         <!-- Adoption Application Information -->
-        <div class="mb-3">
-            <strong>Your Name:</strong> <span id="name-display">Takutou Kim</span>
-        </div>
-
-        <div class="mb-3">
-            <strong>Address:</strong> <span id="address-display">Residence No. 55 Ryongsong Residence Pyongyang, North Korea</span>
-        </div>
-
-        <div class="mb-3">
-            <strong>Phone Number:</strong> <span id="phone-display">+(850) 2 18 111</span>
-        </div>
-
-        <div class="mb-3">
-            <strong>Reason for Adopting:</strong>
-            <p id="reason-display">I've always wanted to have a pet and provide a loving home...</p>
-        </div>
     </section>
 
     <!-- Conversation Section -->
     <section id="conversation-section">
-        <h3 class="mb-3">Conversation with Shelter</h3>
-        
-        <div class="conversation-box mb-3">
-            <!-- Sample Messages -->
-            <div class="shelter-message"><strong>Shelter:</strong> Thank you for your interest in Max. Can you provide more info about your home?</div>
-            <div><strong>You:</strong> Sure! I have a spacious apartment with a balcony. There's a park nearby for walks.</div>
-            <!-- Add more messages as needed -->
-        </div>
+        <h3 class="mt-5">Conversation with Shelter</h3>
+
 
         <!-- Reply Box -->
-        <form id="reply-form" class="mb-3">
+        <!-- <form id="reply-form" class="mb-3">
             <div class="mb-3">
-                <label for="reply-message" class="form-label">Your Message:</label>
+                <label for="reply-message" class="form-label"><strong>Your Message:</strong></label>
                 <textarea id="reply-message" rows="3" class="form-control" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-out-primary">Send Reply</button>
-        </form>
+        </form> -->
+
+
+
+        <div class="col mt-4 mb-4">
+            <div class="card bg-body">
+                <div class="card-body p-2">
+                    <!--comment 1-->
+                    <div class="card mb-4 border-0 border-bottom rounded-0">
+                        <div class="card-body">
+                            <!--profile pic-->
+                            <div class="row mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="40" height="40" class="rounded"/>
+                                        <p class="mb-0 ms-2 me-4"><strong>Martha</strong></p>
+                                        <div>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-10"><p>I love this dog</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--comment 1-->
+                    <div class="card mb-4 border-0 border-bottom rounded-0">
+                        <div class="card-body">
+                            <!--profile pic-->
+                            <div class="row mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <img src="./asserts/person.png" alt="avatar" width="40" height="40" class="rounded"/>
+                                        <p class="mb-0 ms-2 me-4"><strong>Shelter</strong></p>
+                                        <div>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-10"><p>Can I adopt him?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--comment 1-->
+                    <div class="card mb-4 border-0 border-bottom rounded-0">
+                        <div class="card-body">
+                            <!--profile pic-->
+                            <div class="row mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="40" height="40" class="rounded"/>
+                                        <p class="mb-0 ms-2 me-4"><strong>Martha</strong></p>
+                                        <div>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star yellow-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-10"><p>No problem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-outline mb-3">
+                        <input type="text" id="addANote" class="form-control" placeholder="Type Your reply" />
+                    </div>
+                    <button type="submit" class="btn btn-out-primary">Send Reply</button>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 </main>
 
