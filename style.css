@@ -147,7 +147,7 @@ header {
   .container {
     position: relative;
     z-index: 1;
-    max-width: 300px;
+
     margin: 0 auto;
   }
   .container:before, .container:after {
@@ -179,6 +179,7 @@ header {
   }
   body {
     background: #6a48d7; /* fallback for old browsers */
+   
 
   
     font-family: "Roboto", sans-serif;
@@ -220,10 +221,26 @@ header {
 .full-height {
   min-height: 100vh;
 }
-
+/* max profile page */
 .card-img-limited {
   max-width: 300px;
   max-height: 200px;
   display: block;
   margin: 0 auto;
+}
+
+
+/*Adoption page*/
+.mb-3{
+  color: white;
+}
+
+/*Adoption Application*/
+div.shelter-message{
+ color: #ffd30f;
+}
+
+.mb-3.adoption-title{
+  color: #ffd30f;
+  font-weight: bold;
 }
