@@ -244,3 +244,24 @@ div.shelter-message{
   color: #ffd30f;
   font-weight: bold;
 }
+
+/*Landing page*/
+.landing-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.major-logo-landing{
+  width: 50%;  /* Adjust width as required */
+  height: auto;
+}
+.landing-page a {
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size inside button */
+  margin: 50px;
+
+}
