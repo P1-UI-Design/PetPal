@@ -11,76 +11,82 @@
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
       <link rel="stylesheet" href="./shelter.css">
+      <link rel="stylesheet" href="./style.css">
       <style>
-
+        .special{
+            position: sticky;
+            top: 200px;
+        }
       </style>
   </head>
 
   <body>
-      <header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                      <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                      PetsHome
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-2">
+                <a class="navbar-brand" href="search.html">
+                    <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    PetsHome
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="search.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="shelterDetail.html">Shelters</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown " >
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
                     </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">My Pets</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-      
-      
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        My Account
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Account info</a></li>
-                        <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
-                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex" role="search">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+    
+    
+                  <li  class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      My Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="accountUpdate.html">Account info</a></li>
+                      <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+    
+                <div class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </div>
               </div>
-          </nav>
+            </div>
+        </nav>
       </header>
 
 
       <main>
         <div class="container-fluid bg-light">
+            <div class="row" style="height: 56px;"></div>
             <!--Picture-->
-            <div class="row  bg-danger-subtle">
+            <div class="row  bg-secondary">
                 <div class="col-0 col-md-2"></div>
                 <div class="col-12 col-md-8" style="height: 65vh">
                     <div id="carouselExample" class="carousel slide h-100">
                         <div class="carousel-inner" >
                           <div class="carousel-item active">
                             <div class="d-flex justify-content-center">
-                                <img src="asserts/shelters/hut.png" class="rounded mx-auto d-block" style="height: 65vh" alt="...">
+                                <img src="asserts/shelters/hut3.png" class="rounded mx-auto d-block" style="height: 65vh" alt="...">
                             </div>
                           </div>
 
@@ -92,7 +98,7 @@
 
                           <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <img src="asserts/shelters/hut.png" class="rounded mx-auto d-block" style="height: 65vh" alt="...">
+                                <img src="asserts/shelters/hut2.png" class="rounded mx-auto d-block" style="height: 65vh" alt="...">
                             </div>
                           </div>
                         </div>
@@ -131,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="row ms-4"><h2><strong>Listings</strong></h2></div>
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 ms-4 me-2">
                         <div class="col p-0">
                             <div class="card mx-1 my-2">
@@ -211,8 +217,8 @@
                                         <div class="row mb-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex flex-row align-items-center">
-                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="40" height="40" class="rounded"/>
-                                                    <p class="mb-0 ms-2 me-4"><strong>Martha</strong></p>
+                                                    <img src="./asserts/person.png" alt="avatar" width="40" height="40" class="rounded"/>
+                                                    <p class="mb-0 ms-2 me-4"><strong>Il-Sung</strong></p>
                                                     <div>
                                                         <i class="fa fa-star yellow-star"></i>
                                                         <i class="fa fa-star yellow-star"></i>
@@ -247,8 +253,8 @@
                                         <div class="row mb-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex flex-row align-items-center">
-                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="40" height="40" class="rounded"/>
-                                                    <p class="mb-0 ms-2 me-4"><strong>Martha</strong></p>
+                                                    <img src="./asserts/person.png" alt="avatar" width="40" height="40" class="rounded"/>
+                                                    <p class="mb-0 ms-2 me-4"><strong>Sejong</strong></p>
                                                     <div>
                                                         <i class="fa fa-star yellow-star"></i>
                                                         <i class="fa fa-star yellow-star"></i>
@@ -283,8 +289,8 @@
                                         <div class="row mb-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex flex-row align-items-center">
-                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="40" height="40" class="rounded"/>
-                                                    <p class="mb-0 ms-2 me-4"><strong>Martha</strong></p>
+                                                    <img src="./asserts/person.png" alt="avatar" width="40" height="40" class="rounded"/>
+                                                    <p class="mb-0 ms-2 me-4"><strong>Dae-jung</strong></p>
                                                     <div>
                                                         <i class="fa fa-star yellow-star"></i>
                                                         <i class="fa fa-star yellow-star"></i>
@@ -322,10 +328,10 @@
 
                 <div class="col-0 col-lg-3 g-0">
                     <div class="card mt-4 ms-2 me-4 mb-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100568.3030012436!2d125.67196417516823!3d39.02689841061652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357e02dae64f4337%3A0xd40677e21771aa95!2sPyongyang%2C%20North%20Korea!5e0!3m2!1sen!2sca!4v1697062294323!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100568.3030012436!2d125.67196417516823!3d39.02689841061652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357e02dae64f4337%3A0xd40677e21771aa95!2sPyongyang%2C%20North%20Korea!5e0!3m2!1sen!2sca!4v1697062294323!5m2!1sen!2sca" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
-                    <div class="card mt-2 ms-2 me-4 mb-4 sticky-top">
+                    <div class="card mt-2 ms-2 me-4 mb-4 special">
                         <div class="col-md-12">
                             <div class="card-body">
                                 <h2 class="card-text mx-1 my-1">Contact Us</h2>

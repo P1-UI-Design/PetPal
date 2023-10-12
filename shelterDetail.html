@@ -7,81 +7,84 @@
       <title>PetPal - Update Account</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
       <style>
 
       </style>
   </head>
 
   <body>
-      <header>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                      <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                      PetsHome
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">My Pets</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-      
-      
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        My Account
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Account info</a></li>
-                        <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
-                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                      </ul>
-                    </li>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-2">
+              <a class="navbar-brand" href="search.html">
+                  <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  PetsHome
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link "  href="search.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shelterDetail.html">Shelters</a>
+                </li>
+                
+                <li class="nav-item dropdown " >
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
+                </li>
+  
+  
+                <li  class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="accountUpdate.html">Account info</a></li>
+                    <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+  
+              <div class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
               </div>
-          </nav>
-      </header>
+            </div>
+          </div>
+      </nav>
+    </header>
 
 
       <main>
         <div class="container-fluid vh-100">
-            <div class="row">
+          <div class="row" style="height: 56px;"></div>
+            <div class="row"  style="height: 90vh">
               <!--Shelter Listings-->
-              <div class="col-6 d-flex flex-column g-0">
-                <div class="overflow-auto" style="height: 600px">
+              <div class="col-sm d-flex flex-column g-0">
+                <div class="overflow-auto" style="height: 90vh">
                   <!--card 1-->
-                  <div class="card" style="max-height: 15rem">
+                  <div class="card m-2" style="min-height: 13rem">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%"/>
+                      <div class="col-lg-4">
+                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%; width: 100%"/>
                       </div>
 
-                      <div class="col-md-8">
+                      <div class="col-lg-8">
                         <div class="card-body ">
-                          <h2>PyongYang Dog Camp</h2>
+                          <h2><strong>PyongYang Dog Camp</strong></h2>
                           <p class="card-text m-0"><strong>4.5 star | 163 reviews</strong></p>
                           <p class="card-text m-0">123 Animal Ave, PetCity, PC 12345</p>
                           <p class="card-text m-0">(123) 456-7890</p>
@@ -92,15 +95,15 @@
                     </div>
                   </div>
 
-                  <div class="card" style="max-height: 15rem">
+                  <div class="card m-2" style="min-height: 13rem">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%"/>
+                      <div class="col-lg-4">
+                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%; width: 100%"/>
                       </div>
 
-                      <div class="col-md-8">
+                      <div class="col-lg-8">
                         <div class="card-body ">
-                          <h2>Green Paws Shelter</h2>
+                          <h2><strong>Green Paws Shelter</strong></h2>
                           <small class="text-muted">Last updated 3 mins ago</small>
                           <p class="card-text m-0">123 Animal Ave, PetCity, PC 12345</p>
                           <p class="card-text m-0">(123) 456-7890</p>
@@ -111,15 +114,15 @@
                     </div>
                   </div>
 
-                  <div class="card" style="max-height: 15rem">
+                  <div class="card m-2" style="min-height: 13rem">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%"/>
+                      <div class="col-lg-4">
+                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%; width: 100%"/>
                       </div>
 
-                      <div class="col-md-8">
+                      <div class="col-lg-8">
                         <div class="card-body ">
-                          <h2>Green Paws Shelter</h2>
+                          <h2><strong>Green Paws Shelter</strong></h2>
                           <small class="text-muted">Last updated 3 mins ago</small>
                           <p class="card-text m-0">123 Animal Ave, PetCity, PC 12345</p>
                           <p class="card-text m-0">(123) 456-7890</p>
@@ -130,15 +133,15 @@
                     </div>
                   </div>
 
-                  <div class="card" style="max-height: 15rem">
+                  <div class="card m-2" style="min-height: 13rem">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%"/>
+                      <div class="col-lg-4">
+                        <img src="./asserts/shelters/hut.png" class="img-fluid rounded-start" style="height: 100%; width: 100%"/>
                       </div>
 
-                      <div class="col-md-8">
+                      <div class="col-lg-8">
                         <div class="card-body ">
-                          <h2>Green Paws Shelter</h2>
+                          <h2><strong>Green Paws Shelter</strong></h2>
                           <small class="text-muted">Last updated 3 mins ago</small>
                           <p class="card-text m-0">123 Animal Ave, PetCity, PC 12345</p>
                           <p class="card-text m-0">(123) 456-7890</p>
@@ -153,17 +156,12 @@
               </div>
               
               <!--Map-->
-              <div class="col-6 g-0">
+              <div class="col-sm  g-0 mt-2 me-2">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100568.3030012436!2d125.67196417516823!3d39.02689841061652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357e02dae64f4337%3A0xd40677e21771aa95!2sPyongyang%2C%20North%20Korea!5e0!3m2!1sen!2sca!4v1697062294323!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
         </div>
       </main>
-      
-      <footer>
-          <p>&copy; 2023 PetPal. All rights reserved.</p>
-      </footer>
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
