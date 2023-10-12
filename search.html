@@ -1,114 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetPal - Update Account</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<html>
+  <head>
+    <title>Pet Search</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
+      .marcus-filter-container {
+        background-color: white;
+        padding: 20px;
+      }
 
+      .marcus-sort-label {
+        margin-top: 20px;
+      }
+
+      .card {
+        margin: 10px;
+        width: 18rem;
+        background-color: white;
+      }
+
+      @media (pointer: none), (pointer: coarse) {
+        .card-columns {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+      }
+
+      .card-header {
+        background-color: purple;
+        color: #fff;
+      }
     </style>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    PetsHome
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">My Pets</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-    
-    
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      My Account
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Account info</a></li>
-                      <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
-                      <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="marcus-filter-container">
+            <div class="form-group">
+              <label for="speciesFilter" class="filter-label">Species:</label>
+              <select class="form-control" id="speciesFilter">
+                <option value="all">All</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+              </select>
             </div>
-        </nav>
-    </header>
-    
 
-
-    <main>
-        <!-- Notifications -->
-        <section id="notifications-section">
-            <div id="notification-icon">
-                <img src="notification-icon.png" alt="Notification Icon">
-                <span class="notification-count">2</span>
+            <div class="form-group">
+              <label for="breedFilter" class="filter-label">Breed:</label>
+              <select class="form-control" id="breedFilter">
+                <option value="all">-</option>
+              </select>
             </div>
-            <div id="notifications-dropdown" hidden>
-                <div class="notification-item">
-                    <p><strong>Luna</strong> is now available for adoption!</p>
-                </div>
-                <div class="notification-item">
-                    <p>Your adoption request for <strong>Max</strong> is pending.</p>
-                </div>
-                <a href="all-notifications.html">See All Notifications</a>
+
+            <div class="form-group">
+              <label for="sexFilter" class="filter-label">Sex:</label>
+              <select class="form-control" id="breedFilter">
+                <option value="all">All</option>
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+              </select>
             </div>
-        </section>
 
-        <!-- Search Section -->
-        <section id="search-section">
-            <input type="text" placeholder="Search for pets...">
-            <button>Search</button>
-        </section>
-        
-        <!-- Results could follow here -->
+            <div class="form-group">
+              <label for="locationFilter" class="filter-label">Location:</label>
+              <select class="form-control" id="locationFilter">
+                <option value="All">All</option>
+                <option value="New York">New York</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Ontario">Ontario</option>
+              </select>
+            </div>
 
-    </main>
+            <button type="button" class="btn btn-primary" id="applyFilters">
+              Apply Filters
+            </button>
 
-    <footer>
-        <p>&copy; 2023 PetPal. All rights reserved.</p>
-    </footer>
+            <div class="form-group">
+              <label for="sort-by" class="marcus-sort-label">Sort by:</label>
+              <select class="sort-by" id="age">
+                <option value="default">Default</option>
+                <option value="young">Youngest first</option>
+                <option value="old">Oldest first</option>
+                <option value="large">Largest first</option>
+                <option value="small">Smallest first</option>
+                <option value="alphabetic">Alphabetic</option>
+                <option value="rev-alpha">Reverse alphabetic</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-primary" id="applySort">
+              Apply Sort
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card-columns" id="searchResults"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-        // Sample JS to handle the dropdown
-        const icon = document.getElementById('notification-icon');
-        const dropdown = document.getElementById('notifications-dropdown');
+      const speciesFilter = document.getElementById("speciesFilter");
+      const breedFilter = document.getElementById("breedFilter");
 
-        icon.addEventListener('click', function() {
-            dropdown.hidden = !dropdown.hidden;
+      const breedOptions = {
+        all: ["All"],
+        dog: ["All", "Labrador", "German Shepherd", "Golden Retriever"],
+        cat: ["All", "LiHua", "Persian", "Maine Coon"],
+      };
+
+      speciesFilter.addEventListener("change", function () {
+        const selectedSpecies = speciesFilter.value;
+        const breedOptionsForSpecies = breedOptions[selectedSpecies] || [];
+
+        breedFilter.innerHTML = "";
+
+        breedOptionsForSpecies.forEach((breed) => {
+          const option = document.createElement("option");
+          option.value = breed;
+          option.textContent = breed;
+          breedFilter.appendChild(option);
         });
-    </script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+      });
 
+      const petData = [
+        {
+          name: "Justin",
+          species: "Dog",
+          breed: "Labrador",
+          age: "3 years",
+          sex: "Male",
+          image: "asserts/search/dog1.jpg",
+          location: "New York",
+        },
+        {
+          name: "Donald",
+          species: "Cat",
+          breed: "Lihua",
+          age: "2 years",
+          sex: "Male",
+          image: "asserts/search/cat1.jpg",
+          location: "Ontario",
+        },
+        {
+          name: "Joe",
+          species: "Cat",
+          breed: "Persian",
+          age: "6 months",
+          sex: "Male",
+          image: "asserts/search/cat2.jpg",
+          location: "Quebec",
+        },
+      ];
+
+      function createPetCard(pet) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        const cardHeader = document.createElement("div");
+        cardHeader.classList.add("card-header");
+        cardHeader.textContent = pet.name;
+        card.appendChild(cardHeader);
+
+        const cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
+
+        const breedLabel = document.createElement("p");
+        breedLabel.textContent = `Breed: ${pet.breed} ${pet.species}`;
+        cardBody.appendChild(breedLabel);
+
+        const ageLabel = document.createElement("p");
+        ageLabel.textContent = `Age: ${pet.age}`;
+        cardBody.appendChild(ageLabel);
+
+        const locationLabel = document.createElement("p");
+        locationLabel.textContent = `Location: ${pet.location}`;
+        cardBody.appendChild(locationLabel);
+
+        const image = document.createElement("img");
+        image.src = pet.image;
+        image.classList.add("card-img-top");
+        card.appendChild(image);
+
+        // Create a "More Information" button
+        const moreInfoButton = document.createElement("button");
+        moreInfoButton.classList.add("btn", "btn-primary");
+        moreInfoButton.textContent = "More Information";
+
+        // Define a click event handler for the button
+        moreInfoButton.addEventListener("click", function () {
+          // Handle what happens when the button is clicked, e.g., showing more details.
+          // You can add your logic here.
+          alert(
+            `This should lead me to the pet information page, not connected yet through backend`
+          );
+        });
+
+        cardBody.appendChild(moreInfoButton);
+        card.appendChild(cardBody);
+
+        return card;
+      }
+
+      function displaySearchResults() {
+        const searchResultsContainer = document.getElementById("searchResults");
+
+        searchResultsContainer.innerHTML = "";
+
+        petData.forEach((pet) => {
+          const card = createPetCard(pet);
+          searchResultsContainer.appendChild(card);
+        });
+      }
+
+      displaySearchResults();
+    </script>
+  </body>
 </html>
