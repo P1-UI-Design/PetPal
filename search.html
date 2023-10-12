@@ -12,14 +12,14 @@
         padding: 20px;
       }
 
-      .marcus-sort-label {
-        margin-top: 20px;
-      }
-
       .card {
         margin: 10px;
         width: 18rem;
         background-color: white;
+      }
+
+      .container-fluid {
+        width: 99%;
       }
 
       @media (pointer: none), (pointer: coarse) {
@@ -34,12 +34,47 @@
         background-color: purple;
         color: #fff;
       }
+
+      .sort-label {
+        margin-top: 1rem;
+      }
+
+      .filter-label {
+        margin-top: 0.5rem;
+      }
     </style>
   </head>
+
   <body>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
+          <!-- Notification Bar -->
+          <div class="mb-3">
+            <button
+              class="btn btn-info w-100"
+              type="button"
+              data-toggle="collapse"
+              data-target="#notificationBar"
+              aria-expanded="false"
+              aria-controls="notificationBar"
+            >
+              Notifications <span class="badge badge-light">3</span>
+            </button>
+            <div class="collapse" id="notificationBar">
+              <div class="alert alert-primary mt-2" role="alert">
+                New dogs available for adoption!
+              </div>
+              <div class="alert alert-success mt-2" role="alert">
+                Your pet adoption request has been approved.
+              </div>
+              <div class="alert alert-warning mt-2" role="alert">
+                Update on pet vaccinations available.
+              </div>
+            </div>
+          </div>
+
+          <!-- Filters Container -->
           <div class="marcus-filter-container">
             <div class="form-group">
               <label for="speciesFilter" class="filter-label">Species:</label>
@@ -76,13 +111,17 @@
               </select>
             </div>
 
-            <button type="button" class="btn btn-primary" id="applyFilters">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              id="applyFilters"
+            >
               Apply Filters
             </button>
 
             <div class="form-group">
-              <label for="sort-by" class="marcus-sort-label">Sort by:</label>
-              <select class="sort-by" id="age">
+              <label for="sort-by" class="sort-label">Sort by:</label>
+              <select class="form-control" id="sort-by">
                 <option value="default">Default</option>
                 <option value="young">Youngest first</option>
                 <option value="old">Oldest first</option>
@@ -92,7 +131,11 @@
                 <option value="rev-alpha">Reverse alphabetic</option>
               </select>
             </div>
-            <button type="button" class="btn btn-primary" id="applySort">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              id="applySort"
+            >
               Apply Sort
             </button>
           </div>
@@ -158,6 +201,24 @@
           sex: "Male",
           image: "asserts/search/cat2.jpg",
           location: "Quebec",
+        },
+        {
+          name: "George",
+          species: "Cat",
+          breed: "Lihua",
+          age: "7 months",
+          sex: "Male",
+          image: "asserts/search/cat3.jpg",
+          location: "Ontario",
+        },
+        {
+          name: "Thomas",
+          species: "Cat",
+          breed: "Persian",
+          age: "5 years",
+          sex: "Male",
+          image: "asserts/search/cat4.jpg",
+          location: "New York",
         },
       ];
 
