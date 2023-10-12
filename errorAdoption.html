@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Adoption Status</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Adoption Status Errors</h2>
+
+        <!-- Pending Error -->
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Pending!</h4>
+            <p>This pet is currently under a pending adoption process. Please wait for the finalization or choose another pet.</p>
+        </div>
+
+        <!-- Adopted Error -->
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Already Adopted!</h4>
+            <p>This pet has already been adopted by another family. We have many other pets looking for a home, please consider adopting another one.</p>
+        </div>
+
+        <!-- Withdrawn Error -->
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Withdrawn!</h4>
+            <p>This pet has been withdrawn from the adoption list. It may be due to various reasons like health or behavioral issues. Please look at other available pets.</p>
+        </div>
+
+        <a href="max_profile.html" class="btn btn-primary mt-4">Return to Adoption List</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-sVtB5lPN5pWY0WKb+IFsq7L/3AIk6IzQgTVFzjTihIfJ4/zy1b16x4vyIb/Qkr5bu"
+        crossorigin="anonymous"></script>
+</body>
+</html>
