@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Adoption Guidance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+   <style>
+        .card-header {
+            background-color: #ffd30f;/* Distinct green color */
+            color: #6a48d7;
+        }
+        .card {
+            height: 100%; /* Ensure that the cards take full height of the grid cell */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    PetsHome
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Pets</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown " >
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+    
+    
+                  <li  class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="accountUpdate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      My Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item active" href="#">Account info</a></li>
+                      <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+    
+    
+                <div class="d-flex">
+                    
+                  
+        
+                    <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+    
+                
+              </div>
+            </div>
+        </nav>
+    </header>
+<main class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Adoption Process Card -->
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header">
+                    Adoption Process
+                </div>
+                <div class="card-body">
+                    <p>
+                        The adoption process begins with filling out an application form. After submission, our team will review the application to ensure the best fit between the pet and the potential owner. This can take up to 5 days. Successful applicants will be contacted for a home visit or virtual interview. Once approved, a meeting with the pet is arranged.
+                    </p >
+                </div>
+            </div>
+        </div>
+
+        <!-- Fees Card -->
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header">
+                    Fees
+                </div>
+                <div class="card-body">
+                    <p>
+                        The adoption fee varies depending on the pet's age, size, and breed. Generally:
+                        <ul>
+                            <li>Cats: $50 - $150</li>
+                            <li>Dogs: $100 - $300</li>
+                            <li>Rabbits: $25 - $50</li>
+                        </ul>
+                        The fee includes vaccinations, microchipping, and a vet check.
+                    </p >
+                </div>
+            </div>
+        </div>
+
+        <!-- Requirements Card -->
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header">
+                    Requirements
+                </div>
+                <div class="card-body">
+                    <p>
+                        Adopters must meet the following criteria:
+                        <ul>
+                            <li>Must be at least 21 years old.</li>
+                            <li>Provide a stable living environment.</li>
+                            <li>Have the consent of all household members.</li>
+                            <li>Have a valid ID with current address.</li>
+                            <li>Agree to a home visit or virtual interview.</li>
+                        </ul>
+                    </p >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Return Button -->
+    <div class="text-center mt-4">
+        <a href=" " class="btn btn-out-primary">Return</a >
+    </div>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
