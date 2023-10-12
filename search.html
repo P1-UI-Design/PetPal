@@ -36,10 +36,6 @@
         color: black;
       }
 
-      .container-fluid {
-        width: 99%;
-      }
-
       @media (pointer: none), (pointer: coarse) {
         .col-md-4 {
           flex-basis: 100%;
@@ -151,13 +147,13 @@
               </button>
             </div>
           </div>
-        </div>
       </nav>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 p-0">
+      <div class="row" style="height:56px"></div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 mt-2">
           <!-- Notification Bar -->
           <div class="mb-3">
             <button
@@ -183,6 +179,7 @@
             </div>
           </div>
 
+
           <!-- Filters Container -->
           <div class="marcus-filter-container">
             <div class="form-group">
@@ -203,7 +200,7 @@
 
             <div class="form-group">
               <label for="sexFilter" class="filter-label">Sex:</label>
-              <select class="form-control" id="breedFilter">
+              <select class="form-control" id="sexFilter">
                 <option value="all">All</option>
                 <option value="male">Male</option>
                 <option value="male">Female</option>
@@ -219,7 +216,6 @@
                 <option value="Ontario">Ontario</option>
               </select>
             </div>
-
             <button type="button" class="btn btn-block" id="applyFilters">
               Apply Filters
             </button>

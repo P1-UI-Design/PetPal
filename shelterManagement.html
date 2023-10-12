@@ -9,80 +9,65 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <link href="./shelterManagement.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <style>
-
+      .card {
+          box-shadow: none;
+      }
     </style>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    PetsHome
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">My Pets</a>
-                  </li>
-                  
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-    
-    
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      My Account
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Account info</a></li>
-                      <li><a class="dropdown-item" href="#">My Saved Pets</a></li>
-                      <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                    </ul>
-                  </li>
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-2">
+            <a class="navbar-brand" href="search.html">
+                <img src="./asserts/logo/Pets Ai File.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                PetsHome
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="shelterManagement.html">Home</a>
+              </li>
+
+              
+
+
+              <li  class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Sign Out</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-    </header>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
     
 
 
     <main>
-      <div class="container-fluid bg-light">
+      <div class="container-fluid bg-light" style="width: 80vw;">
+        <div class="row" style="height: 56px;"></div>
           <div class="col ms-2 me-2 mt-4 mb-4">
               <div class="card bg-white">
                   <div class="card-body p-2">
-                      <h2 class="card-text ms-3"><strong>Shelter Information</strong></h2>
+                      <h2 class="card-text ms-3 mt-3"><strong>MY SHELTER PROFILE</strong></h2>
                           <!--comment 1-->
                           <div class="card mb-4 border-0 border-bottom rounded-0">
                             <div class="card-body">
                                 <div class="row">
-                                  <div class="col-5 col-sm-3">
+                                  <div class="col-5 col-m-3">
                                     <h4 class="card-title">Shelter Name</h4>
                                   </div>
-                                  <div class="col-5 col-m-6">
+                                  <div class="col-5 col-m-8">
                                     <p class="card-text">PyongYang Dog Camp</p>
                                   </div>
                                   <div class="col-2 col-m-1">
@@ -116,10 +101,10 @@
                           <div class="card mb-4 border-0 border-bottom rounded-0">
                             <div class="card-body">
                                 <div class="row">
-                                  <div class="col-5 col-sm-3">
+                                  <div class="col-5 col-m-3">
                                     <h4 class="card-title">Password</h4>
                                   </div>
-                                  <div class="col-5 col-m-6">
+                                  <div class="col-5 col-m-8">
                                     <p class="card-text">**************</p>
                                   </div>
                                   <div class="col-2 col-m-1">
@@ -153,10 +138,10 @@
                           <div class="card mb-4 border-0 border-bottom rounded-0">
                             <div class="card-body">
                                 <div class="row">
-                                  <div class="col-5 col-sm-3">
+                                  <div class="col-5 col-m-3">
                                     <h4 class="card-title">Email</h4>
                                   </div>
-                                  <div class="col-5 col-m-6">
+                                  <div class="col-5 col-m-8">
                                     <p class="card-text">12345@gmail.com</p>
                                   </div>
                                   <div class="col-2 col-m-1">
@@ -190,10 +175,10 @@
                           <div class="card mb-4 border-0 border-bottom rounded-0">
                             <div class="card-body">
                                 <div class="row">
-                                  <div class="col-5 col-sm-3">
+                                  <div class="col-5 col-m-3">
                                     <h4 class="card-title">Telephone</h4>
                                   </div>
-                                  <div class="col-5 col-m-6">
+                                  <div class="col-5 col-m-8">
                                     <p class="card-text">(123)456-7890</p>
                                   </div>
                                   <div class="col-2 col-m-1">
@@ -227,10 +212,10 @@
                           <div class="card mb-4 border-0 border-bottom rounded-0">
                             <div class="card-body">
                                 <div class="row">
-                                  <div class="col-5 col-sm-3">
+                                  <div class="col-5 col-m-3">
                                     <h4 class="card-title">Address</h4>
                                   </div>
-                                  <div class="col-5 col-m-6">
+                                  <div class="col-5 col-m-8">
                                     <p class="card-text">123 hahah Ave, PyongYang, NK</p>
                                   </div>
                                   <div class="col-2 col-m-1">
@@ -259,18 +244,15 @@
                                 </div>
                               </div>
                           </div>
-
-
-
                   </div>
               </div>
             <!--INFO-->
             <div class="card bg-white mt-4">
               <div class="card-body p-2">
-                  <h2 class="card-text ms-3"><strong>Manage Pets</strong></h2>
+                  <h2 class="card-text ms-4 mt-3"><strong>Manage Pets</strong></h2>
                   <div class="row">
                     <div class="col-12 g-0">
-                        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 row-cols-xl-6 mx-3">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3">
                           <div class="col">
                             <div class="card mx-1 my-2 hovercard" style="min-height: 380px">
                               <img class="card-img-top" src="asserts/plus.png" alt="Card image">
